@@ -1,23 +1,27 @@
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
+<div class="hr-start">
+    <div class="hr-light-beam hr-light-left"></div>
+    <div class="hr-light-beam hr-light-right"></div>
 
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
+    <section class="hr-start-card">
+        <p class="hr-kicker">LIVE TONIGHT</p>
+        <h1 class="hr-title">SOC OPS</h1>
+        <p class="hr-subtitle">SOCIAL BINGO STAGE EDITION</p>
+
+        <div class="hr-rules-panel">
+            <h2>How The Crowd Wins</h2>
+            <ul>
+                <li>Find people who match each square.</li>
+                <li>Hit the square when you make a match.</li>
+                <li>Own a 5-line streak and claim BINGO.</li>
             </ul>
         </div>
 
         <button
             @onclick="OnStart"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
+            class="hr-primary-btn">
+            Drop The Needle
         </button>
-    </div>
+    </section>
 </div>
 
 @code {

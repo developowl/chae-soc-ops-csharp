@@ -1,13 +1,13 @@
-<div class="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
-    <div class="bg-white rounded-xl p-6 max-w-xs w-full text-center shadow-xl animate-[bounce_0.5s_ease-out]">
-        <div class="text-5xl mb-4">🎉</div>
-        <h2 class="text-3xl font-bold text-amber-500 mb-2">BINGO!</h2>
-        <p class="text-gray-600 mb-6">You completed a line!</p>
+<div class="hr-modal-backdrop fixed inset-0 flex items-center justify-center p-4 z-50">
+    <div class="hr-modal-card">
+        <p class="hr-modal-kicker">Encore Moment</p>
+        <h2>BINGO!</h2>
+        <p class="hr-modal-copy">You just landed a perfect line. Keep the set rolling.</p>
 
         <button
             @onclick="OnDismiss"
-            class="w-full bg-accent text-white font-semibold py-3 px-6 rounded-lg active:bg-accent-light transition-colors">
-            Keep Playing
+            class="hr-primary-btn hr-modal-btn">
+            Back To The Floor
         </button>
     </div>
 </div>
