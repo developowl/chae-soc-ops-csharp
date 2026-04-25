@@ -81,7 +81,7 @@ public class BingoGameService
     {
         try
         {
-            var saved = await _jsRuntime.InvokeAsync<string?>("localStorage.getItem", STORAGE_KEY);
+            var saved = await _jsRuntime.InvokeAsync<string?>("sessionStorage.getItem", STORAGE_KEY);
             if (!string.IsNullOrEmpty(saved))
             {
                 var data = JsonSerializer.Deserialize<StoredGameData>(saved);
@@ -111,7 +111,7 @@ public class BingoGameService
                 WinningLine = WinningLine
             };
             var json = JsonSerializer.Serialize(data);
-            await _jsRuntime.InvokeVoidAsync("localStorage.setItem", STORAGE_KEY, json);
+            await _jsRuntime.InvokeVoidAsync("sessionStorage.setItem", STORAGE_KEY, json);
         }
         catch (Exception ex)
         {
